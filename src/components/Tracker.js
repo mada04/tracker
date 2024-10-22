@@ -13,7 +13,7 @@ const Tracker = () => {
         const transactionArray = [...transaction];
         transactionArray.push(payload)
         setTransaction(transactionArray)
-        console.log("transaction",transaction)
+        console.log("transaction", transaction)
     }
 
     const calculateTransactions = () => {
@@ -35,12 +35,16 @@ const Tracker = () => {
 
     useEffect(() => {
         calculateTransactions();
-console.log("transac",transaction)
+        console.log("transac", transaction)
     }, [transaction])
 
     return (
         <div className="container">
-            <h1 className="heading">Tracker</h1>
+            <h1 className="heading" style={{
+                color: "rgb(49, 117, 49)",
+                textDecoration: "underline",
+                fontSize: "25px",
+            }}>Tracker</h1>
             <OverviewComponent toggle={toggle}
                 setToggle={setToggle}
                 expense={expense}

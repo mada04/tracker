@@ -21,10 +21,14 @@ const TransactionsContainer = (props) => {
 
     return (
         <div className="containerTransaction">
-            <h1>Transactions</h1>
+            <h1 style={{
+                color: "#317531",
+                textDecoration: "underline",
+                fontSize:"20px"
+            }}>Transactions</h1>
             <input type="text"
 
-                class="searchInput"
+                className="searchInput"
                 placeholder="Search here"
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)} />
@@ -38,7 +42,7 @@ const TransactionsContainer = (props) => {
                                 removeTransaction={props.removeTransaction}
                             />
                         )))
-                    : (<p>No transaction</p>)}
+                    : (<p style={{textAlign:"center",color:"green"}}>No transaction</p>)}
             </div>
 
 

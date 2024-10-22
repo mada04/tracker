@@ -14,7 +14,7 @@ const AddTransactionData=()=>{
         id:Date.now(),
 
     });
-    console.log("oo",props)
+    
     props.setToggle();
 }
     return (
