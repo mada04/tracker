@@ -52,7 +52,7 @@ const AddTransactionData=()=>{
                     />  <label>Income</label>
                 </div>
             </div>
-            <button className="buttonSub" onClick={AddTransactionData}>Add Transaction</button>
+            <button className="buttonSub" onClick={AddTransactionData} style={{background:"linear-gradient(rgb(68, 230, 16), rgba(0, 0, 0, 0.17))"}}>Add Transaction</button>
         </div>
     )
 }

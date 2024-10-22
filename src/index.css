@@ -39,7 +39,7 @@ code {
 }
 
 .cont {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
@@ -147,13 +147,14 @@ code {
   border: 1px solid #000;
   border-radius: 5px;
   padding: 10px 20px;
-  background-color: #fff;
+  background:linear-gradient(45deg, #00FF9C, #00000052);
+  color:#347928;
 
   & span {
     font-weight: bold;
     font-size: 25px;
     display: block;
-    color: "green";
+    color: white;
   }
 }
 
@@ -162,13 +163,13 @@ code {
   border: 1px solid #000;
   border-radius: 5px;
   padding: 10px 20px;
-  background-color: #fff;
-
+  background: linear-gradient(45deg, #00FF9C, #00000052);
+  color:#347928;
   & span {
     font-weight: bold;
     font-size: 25px;
     display: block;
-    color: "green";
+    color: white;
   }
 }
 .transactionDetails{
@@ -180,7 +181,7 @@ code {
 }
 
 .removeButton{
-  background-color: #44E610;
+  background:linear-gradient(rgb(68, 230, 16), rgba(0, 0, 0, 0.17));
   color: white;
   border: none;
   padding: 5px 10px;
